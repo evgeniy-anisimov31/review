@@ -1,0 +1,107 @@
+.container {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer {
+  display: inline-block;
+  word-break: break-word;
+}
+
+.cardName {
+  width: 82%;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.graphContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selector {
+  margin: 0 5px;
+}
+
+.emptyText {
+  color: var(--color-control-typo-default);
+  margin-top: 50px;
+  text-align: center;
+}
+
+.iconTrash {
+  margin-left: 10px;
+}
+
+.tableButton {
+  margin-top: 20px;
+}
+
+.modal {
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.headerButtons {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.typeModal {
+  padding: 24px;
+  border-radius: 12px;
+  flex-direction: column;
+  display: flex;
+}
+
+.radio {
+  display: flex;
+  margin-top: 16px;
+}
+
+.typeButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 44px;
+}
+
+.graphData {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-left: 10px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.height {
+  height: 100%;
+}
+
+.text {
+  justify-content: center;
+  word-break: break-word;
+}

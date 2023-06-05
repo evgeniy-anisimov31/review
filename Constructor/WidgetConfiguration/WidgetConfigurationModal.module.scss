@@ -1,0 +1,53 @@
+.container {
+  padding: 24px;
+  width: 580px;
+}
+
+.margin {
+  margin-bottom: 8px;
+}
+
+.optionFields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.optionMargin {
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.switcher {
+  margin: 17px 0;
+}
+
+.switcherGroup {
+  display: grid;
+  margin-bottom: 14px;
+}
+
+.warningText {
+  margin-bottom: 15px;
+}
+
+.warningFooter {
+  margin-bottom: 10px;
+}
+
+.cancel {
+  margin-right: 10px;
+}
+
+.actions {
+  justify-content: flex-end !important;
+}

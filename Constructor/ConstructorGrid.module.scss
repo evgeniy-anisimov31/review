@@ -1,0 +1,48 @@
+@value settingsOpacityEnd: 0.5;
+
+:global {
+  .react-grid-placeholder {
+    background: #012434;
+    opacity: 0.6;
+  }
+}
+
+.emptyContainer {
+  padding: 24px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    .settings,
+    .tooltip {
+      opacity: settingsOpacityEnd;
+    }
+  }
+}
+
+.container {
+  padding: 0 12px;
+
+  .layout {
+    width: 100%;
+
+    :global {
+      .react-resizable-handle {
+        opacity: 0;
+        cursor: nwse-resize;
+      }
+
+      .react-draggable-dragging {
+        z-index: 10;
+        position: absolute;
+        opacity: 0.5;
+      }
+
+      .react-grid-item {
+        transition: none;
+      }
+    }
+  }
+}
