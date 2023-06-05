@@ -1,0 +1,78 @@
+.RcTree-treenode .RcTree-title {
+  font-size: var(--size-text-xs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  padding-right: 5px;
+  max-width: 300px;
+}
+
+.ReportTree {
+  .RcTree-treenode .RcTree-title {
+    max-width: 400px;
+  }
+}
+
+.RcTreeWell {
+  width: 100%;
+  z-index: 1;
+
+  &.Rctree__nodeCluster.RcTree-treenode-checkbox-checked > :not(:first-child) {
+    background: var(--color-bg-stripe);
+  }
+
+  .Rctree__nodeCluster.RcTree-treenode-checkbox-indeterminate > :not(:first-child) {
+    background: var(--color-bg-stripe);
+  }
+
+  .RcTree-treenode.RcTree-treenode-selected > :not(:first-child) {
+    background: var(--color-bg-stripe);
+  }
+
+  .RcTree-list {
+    width: 100%;
+  }
+
+  .Rctree__nodeDeposit {
+    font-weight: var(--font-weight-text-semibold);
+  }
+
+  .Rctree__nodeCustom .RcTree-node-content-wrapper {
+    width: auto;
+    flex: 1;
+  }
+
+  .Rctree__nodeDeposit .RcTree-node-content-wrapper:hover {
+    cursor: default;
+  }
+
+  .Rctree__nodeDeposit.RcTree-treenode:hover > :not(:first-child) {
+    background-color: unset;
+  }
+
+  .Rctree__nodeCluster .RcTree-treenode-selected {
+    font-weight: normal;
+  }
+
+  .Rctree__nodeCluster.RcTree-treenode .RcTree-title {
+    font-weight: normal;
+  }
+
+  .Rctree__nodeWell .RcTree-switcher-noop {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .Rctree__nodeCluster .RcTree-checkbox {
+    display: none;
+  }
+
+  .Icon_size_m {
+    --icon-size: var(--graphics-size-m);
+  }
+
+  .IconArrowRight .Icon-Svg {
+    transform: scale(0.7);
+  }
+}

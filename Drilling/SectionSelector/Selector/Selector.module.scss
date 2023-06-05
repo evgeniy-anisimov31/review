@@ -1,0 +1,123 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  user-select: none;
+
+  &.sizeS {
+    --input-height: var(--control-height-s);
+    --input-space: calc(var(--control-space-s) * 0.5);
+    --input-font-size: var(--control-text-size-s);
+    --tag-space: calc(var(--space-xs) / 2 - var(--control-border-width));
+    --input-max-height: calc(4 * var(--tag-space) + 4.5 * var(--select-element-height));
+    --container-border-color: var(--color-control-bg-border-default);
+  }
+}
+
+.control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: auto;
+  min-height: var(--input-height);
+  padding: 0;
+  color: var(--color-control-typo-default);
+  background: var(--color-control-bg-default);
+  border: var(--control-border-width) solid var(--container-border-color);
+  border-radius: var(--control-radius);
+  padding-left: var(--space-xs);
+
+  &.focused {
+    border-color: var(--color-control-bg-border-focus) !important;
+  }
+
+  .controlInner {
+    align-items: stretch;
+    width: 100%;
+    max-width: calc(100% - 2.2 * var(--input-height));
+  }
+
+  .controlList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .tagContainer {
+    margin-right: 4px;
+  }
+
+  .tag {
+    padding-left: 8px;
+    white-space: nowrap;
+  }
+
+  .placeHolder {
+    position: absolute;
+    top: 0;
+    width: calc(100% - var(--input-space));
+    background-color: transparent;
+    line-height: calc(var(--input-height) - 2px);
+    color: var(--color-control-typo-placeholder);
+    font-size: var(--input-font-size);
+    text-align: left;
+    left: var(--space-s);
+    pointer-events: none;
+  }
+}
+
+.indicators {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .clear {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: var(--input-height);
+    color: var(--color-control-typo-clear);
+  }
+
+  .dropdownBtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: var(--input-height);
+    color: var(--color-control-typo-disable);
+
+    .contract > svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .clearBtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: var(--input-height);
+    color: var(--color-control-typo-clear);
+  }
+
+  .delimeter {
+    width: 1px;
+    background-color: var(--color-control-bg-border-default);
+  }
+}

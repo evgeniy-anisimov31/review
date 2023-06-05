@@ -1,0 +1,96 @@
+.popover {
+  box-shadow: var(--shadow-layer);
+}
+
+.selectDropdown {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--space-s);
+  overflow: hidden;
+  background: var(--color-bg-default);
+  border: var(--control-border-width) solid var(--color-control-bg-border-default);
+
+  .control {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .controlHeader {
+    padding: var(--space-xs) 0;
+    padding-right: var(--space-xs);
+  }
+
+  .controlFooter {
+    padding: var(--space-s) 0;
+  }
+
+  .resetButton {
+    cursor: pointer;
+    padding: 2px 6px;
+  }
+
+  .info {
+    padding: var(--space-xs);
+  }
+}
+
+.actionButton + .actionButton {
+  margin-left: var(--space-s);
+}
+
+.selectDropdownList {
+  border: 1px solid var(--color-control-bg-border-default);
+  background-color: var(--color-bg-default);
+  border-radius: var(--control-radius);
+  max-height: 300px;
+  height: 300px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.selectDropdownListContainer {
+  padding: var(--space-xs) 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  color: var(--color-control-typo-default);
+  margin-bottom: 4px;
+  margin-left: 8px;
+  padding: 2px 0;
+
+  .title {
+    margin-left: 16px;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.listGroupItem {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  color: var(--color-control-typo-disable);
+  margin-bottom: 4px;
+  background-color: var(--color-bg-stripe);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .title {
+    margin-left: 8px;
+  }
+
+  &.selected {
+    background-color: var(--color-control-bg-clear-hover);
+  }
+
+  &.selected .title {
+    font-weight: 600;
+    color: var(--color-control-typo-default);
+  }
+}
